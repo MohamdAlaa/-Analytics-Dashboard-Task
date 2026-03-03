@@ -4,7 +4,14 @@
       type="button"
       class="w-10 h-10 rounded-2xl  text-white flex items-center justify-center shadow-card"
     >
-      <img src="/menu.png" alt="Logo" class=" object-cover w-10 h-10" />
+      <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-500 shadow">
+            <div class="grid grid-cols-2 gap-0.5 w-4 h-4">
+              <div class="bg-white rounded-sm size-2"></div>
+              <div class="bg-white rounded-sm size-2"></div>
+              <div class="bg-white rounded-sm size-2"></div>
+              <div class="bg-white rounded-sm size-2"></div>
+            </div>
+          </div>
     </button>
     <button
       type="button"

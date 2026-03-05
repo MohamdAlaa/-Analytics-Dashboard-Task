@@ -186,7 +186,7 @@ const profitLossData = computed(() => ({
         <ScenarioPanel
           title="Forecast & Budget Tuner"
           description="Adjust revenue, OPEX, and COGS assumptions to see profit scenarios live."
-          :sliders="['Revenue Growth', 'COGS % of Revenue', 'CapEx Change', 'Seasonality', 'Pipeline Confidence']"
+          :sliders="['Revenue Growth', 'COGS %of Revenue', 'CapEx Change', 'Seasonality', 'Pipeline Confidence']"
         />
       </div>
     </div>
@@ -205,13 +205,13 @@ const profitLossData = computed(() => ({
       <section class="bg-surface shadow-card rounded-card p-5 sm:p-6 space-y-4">
         <header class="space-y-1">
           <p class=" font-extrabold text-slate-900">Cash Flow Scenario Tuner</p>
-          <p class=" font-semibold text-slate-500">
+          <p class=" text-sm text-slate-500">
             Adjust inflow, outflow, and operational levers to see instant impact on runway and cash
             position.
           </p>
         </header>
 
-        <div class="flex justify-between text-base font-medium">
+        <div class="flex justify-between text-sm font-medium">
           <div class="flex flex-col gap-5">
             <span>Inflow Sensitivity</span>
             <Slider v-model="value"  class="w-36 " />
@@ -227,7 +227,7 @@ const profitLossData = computed(() => ({
         </div>
 
         <div class="bg-primary text-white rounded-b-3xl p-3 text-[11px] space-y-2">
-          <div class="grid grid-cols-4 gap-2 font-medium text-base">
+          <div class="grid grid-cols-4 gap-2 font-medium text-sm">
             <span>Output Snapshot</span>
             <span>Current</span>
             <span>Adjusted</span>
@@ -238,14 +238,14 @@ const profitLossData = computed(() => ({
             :key="row.label"
             class="grid grid-cols-4 gap-2 items-center border-t border-white/15 pt-1.5 mt-1.5"
           >
-            <span class="text-base text-slate-900 font-medium">{{ row.label }}</span>
-            <span class=" text-base text-slate-900 font-medium">{{ row.current }}</span>
-            <span class="text-base text-slate-900 font-medium">{{ row.adjusted }}</span>
-            <span class="text-base  font-medium">{{ row.change }}</span>
+            <span class="text-sm text-slate-900 font-medium">{{ row.label }}</span>
+            <span class=" text-sm text-slate-900 font-medium">{{ row.current }}</span>
+            <span class="text-sm text-slate-900 font-medium">{{ row.adjusted }}</span>
+            <span class="text-sm  font-medium">{{ row.change }}</span>
           </div>
         </div>
 
-        <p class="text-[11px] text-slate-500 leading-relaxed">
+        <p class="text-[13px] text-slate-500 leading-relaxed">
           “Adjusting inflow, outflow, and payment timing helps you see how cash balance may shift.
           Higher inflow or tighter spending usually support a stronger cash position.”
         </p>

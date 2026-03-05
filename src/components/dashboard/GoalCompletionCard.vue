@@ -34,7 +34,7 @@ const options = computed(() => ({
       <Chart type="doughnut" :data="data" :options="options" />
     </div>
     <div class="space-y-1">
-      <p class=" uppercase tracking-wide text-green-500 text-base">Goal Completion</p>
+      <p class=" uppercase tracking-wide text-green-500 text-sm">Goal Completion</p>
       <p class="text-xl font-semibold text-slate-900">{{ Math.round(completion * 100) }}%</p>
       <p class=" text-slate-400">Quarterly revenue target reached.</p>
     </div>

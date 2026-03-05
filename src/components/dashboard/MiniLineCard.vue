@@ -39,7 +39,7 @@ const options = computed(() => ({
     <header class="flex items-center justify-between gap-2">
       <div>
         <p class="text-xs uppercase tracking-wide text-slate-400">{{ title }}</p>
-        <p class="text-sm font-semibold text-slate-900">{{ value }}</p>
+        <p class="text-sm  text-slate-900">{{ value }}</p>
       </div>
       <p class="text-[11px] text-emerald-500 font-medium">{{ label }}</p>
     </header>

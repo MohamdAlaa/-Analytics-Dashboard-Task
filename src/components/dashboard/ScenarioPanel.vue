@@ -27,18 +27,31 @@ const rows = [
       </p>
     </header>
 
-    <div class="grid grid-cols-3 gap-10 ">
-      <div
-        v-for="slider in sliders"
-        :key="slider"
-        class="flex items-center justify-between "
-      >
-      <div class="flex flex-col gap-4">
-        <span class="text-slate-900 font-medium text-sm">{{ slider }}</span>
-        <Slider v-model="value"  class="w-36 h-36 " />
+    
+      <div class="flex item-center gap-5">
+        <div class="flex flex-col gap-3">
+          <span  class="text-sm">Revenue Growth</span>
+          <Slider v-model="value"  class="w-20 " />
+        </div>
+        <div  class="flex flex-col gap-3">
+          <span class="text-sm">COGS %of Revenue</span>
+          <Slider v-model="value"  class="w-20 " />
+        </div>
+        <div  class="flex flex-col gap-3">
+          <span class="text-sm">CapEx Change</span>
+          <Slider v-model="value"  class="w-20 " />
+        </div>
       </div>
+      <div class="flex item-center gap-5 justify-around" >
+        <div  class="flex flex-col gap-3">
+          <span class="text-sm">Seasonality</span>
+          <Slider v-model="value"  class="w-32 " />
+        </div>
+        <div  class="flex flex-col gap-3" >
+          <span class="text-sm">Pipeline Confidence</span>
+          <Slider v-model="value"  class="w-32 " />
+        </div>
       </div>
-    </div>
 
     <div class="bg-primary text-white rounded-b-3xl p-3 text-[11px] space-y-2">
       <div class="grid grid-cols-4 gap-2 font-medium text-sm">

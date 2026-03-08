@@ -211,18 +211,18 @@ const profitLossData = computed(() => ({
           </p>
         </header>
 
-        <div class="flex justify-between text-sm font-medium">
+        <div class="flex justify-between text-sm ">
           <div class="flex flex-col gap-5">
-            <span>Inflow Sensitivity</span>
+            <span class="text-sm">Inflow Sensitivity</span>
             <Slider v-model="value"  class="w-36 " />
           </div>
           <div class="flex flex-col gap-5">
-            <span>OpEx Tightening</span>
+            <span class="text-sm">OpEx Tightening</span>
             <Slider v-model="value"  class="w-36 " />
           </div>
           <div class="flex flex-col gap-5">
-            <span>Payment Terms</span>
-            <Slider v-model="value"  class="w-36 " />
+            <span class="text-sm">Payment Terms</span>
+            <Slider v-model="value"  class="w-32 " />
           </div>
         </div>
 
